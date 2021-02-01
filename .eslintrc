@@ -1,0 +1,76 @@
+{
+    "parser": "babel-eslint",
+    "extends": [
+        "react-app",
+        "plugin:jsx-a11y/recommended",
+        "eslint:recommended"
+    ],
+    "env": {
+        "browser": true,
+        "node": true,
+        "jest": true,
+        "es6": true
+    },
+    "plugins": [
+        "react",
+        "babel",
+        "jsx-a11y",
+        "jest"
+    ],
+    "parserOptions": {
+        "ecmaVersion": 2017,
+        "sourceType": "module",
+        "ecmaFeatures": {
+            "jsx": true,
+            "modules" : true,
+            "experimentalObjectRestSpread": true
+        }
+    },
+    "rules": {
+        "react-hooks/rules-of-hooks": "off",
+        "react-hooks/exhaustive-deps": "off",
+        "react/prefer-stateless-function": 0,
+        "jest/no-focused-tests": 2,
+        "jest/no-identical-title": 2,
+        "comma-dangle": ["error", "never"],
+        "indent": [ "error", 4, { "SwitchCase": 1 } ],
+        "quotes": [ "error", "double" ],
+        "semi": [ "error" ],
+        "brace-style": [ "error", "1tbs", { "allowSingleLine": true } ],
+        "no-console": [ "off" ],
+        "no-unused-vars": [ "warn" ],
+        "space-in-parens": [
+            "error",
+            "always",
+            {
+                "exceptions": []
+            }
+        ],
+        "array-bracket-spacing": [
+            "error",
+            "always"
+        ],
+        "object-curly-spacing": [ "error", "always", { "arraysInObjects": true, "objectsInObjects": true } ],
+        "object-curly-newline": [ "error", { "multiline": true } ],
+        "max-len": [ "error", { "code": 170 } ],
+        "no-tabs": [ "error" ],
+        "key-spacing": [
+            "error",
+            {
+                "afterColon": true
+            }
+        ],
+        "no-param-reassign": "off",
+        "function-paren-newline": "off",
+        "import/no-extraneous-dependencies": 0,
+        "import/prefer-default-export": 0,
+        "react/forbid-prop-types": 0,
+        "react/jsx-curly-brace-presence": "off",
+        "react/jsx-first-prop-new-line": [ 2, "multiline" ],
+        "react/jsx-filename-extension": 0,
+        "react/require-default-props": 0,
+        "react/self-closing-comp": 0,
+        "jsx-a11y/anchor-is-valid": 0,
+        "jsx-a11y/click-events-have-key-events": [ "off" ]
+    }
+}

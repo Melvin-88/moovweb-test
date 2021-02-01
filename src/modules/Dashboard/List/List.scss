@@ -1,0 +1,29 @@
+@import "../../../styles/variables.scss";
+
+.list-wrapper {
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+  padding: 0 10px;
+}
+
+.list-spinner {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+}
+
+.list-empty-state {
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+  align-items: center;
+  font-size: $font-size1;
+}
+
+.list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+}
